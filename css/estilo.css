@@ -175,19 +175,23 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  .cuidado div .cuidado-animal h2 {
-    margin: auto;
-    padding: 7px;
-    text-align: center;
-    font-size: 30px;
-    color: #efc494; }
-  .cuidado div .cuidado-animal img {
+  .cuidado div .cuidado-animal {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    height: 250px;
-    padding: 10px;
-    align-content: center; }
+    align-items: center; }
+    .cuidado div .cuidado-animal h2 {
+      margin: auto;
+      padding: 7px;
+      text-align: center;
+      font-size: 30px;
+      color: #efc494; }
+    .cuidado div .cuidado-animal img {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      height: 250px;
+      padding: 10px;
+      align-content: center; }
   .cuidado div p {
     text-align: center;
     font-size: 18px;
@@ -288,10 +292,6 @@ h3 {
 .imagenes-gato-5 {
   grid-area: imagenes-gato-5; }
 
-.cuidado img {
-  width: 500px;
-  height: 300px; }
-
 /* Estrategia Responsive = Mobile Last */
 @media (max-width: 835px) {
   .seccion-gatos {
@@ -329,10 +329,6 @@ h3 {
 
 .imagenes-perro-5 {
   grid-area: imagenes-perro-5; }
-
-.cuidado img {
-  width: 500px;
-  height: 300px; }
 
 /* Estrategia Responsive = Mobile First */
 @media (min-width: 1110px) {
@@ -391,10 +387,6 @@ h3 {
   width: 350px;
   height: 250px;
   padding: 10px; }
-
-.cuidado img {
-  width: 500px;
-  height: 300px; }
 
 /* Estrategia Responsive = Mobile First */
 @media (min-width: 1110px) {

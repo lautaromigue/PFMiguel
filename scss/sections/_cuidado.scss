@@ -5,6 +5,9 @@
         justify-content: center;
         flex-direction: column;
         .cuidado-animal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             h2{
                 margin: auto;
                 padding: 7px;
