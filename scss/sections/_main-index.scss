@@ -1,7 +1,13 @@
-.texto-principal {
+.div-tp{
+    width: 100%;
     background-color: beige;
-    font-size: 30px;
-    text-align: center;
+    .texto-principal {
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+        width: auto;
+    }
 }
 
 
@@ -10,6 +16,8 @@
     text-align: center;
     background-color: cadetblue;
     color: white;
+    margin: auto;
+    padding: 7px;
 }
 
 .texto-secundario {
@@ -19,22 +27,25 @@
 }
 
 .seccion1 {
-    div {
+    .div {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        flex-direction: column;
+        flex-wrap: wrap;
         article {
             display: flex;
             flex-direction: column;
         }
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(169, 166, 166);
+            margin: auto;
+            padding: 10px 50px 20px 50px
+        }
     }
 
-    p {
-        text-align: center;
-        font-size: 20px;
-        color: rgb(169, 166, 166);
-    }
 }
 
 .gato-texto-1 {
@@ -138,8 +149,11 @@
 
     p {
         text-align: center;
-        font-size: 20px;
-        color: rgb(169, 166, 166);
+        font-size: 18px;
+        color: #443636;
+        margin: auto;
+        background-color: burlywood;
+        padding: 10px 50px 20px 50px
     }
 }
 
@@ -198,13 +212,12 @@
         text-decoration: none;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        animation: zoom-in-out;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
         a{
             text-decoration: none;
             color: green;
             font-size: 30px;
+            margin: auto;
+            padding: 5px;
         }
 
         &:hover {
@@ -220,21 +233,21 @@
 h3 {
     background-color: greenyellow;
     text-align: center;
-    animation: zoom-in-out;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    margin: auto;
+    padding: 5px;   
 }
 
 
 /* Estrategia Responsive = Mobile First */
-@media(min-width: 671px) {
+@media(min-width: 835px) {
     .seccion1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "imagenes-gato-1 imagenes-gato-2"
             "imagenes-perro-1 imagenes-perro-2"
             "imagenes-tortuga-1 imagenes-tortuga-2";
     }
 }
+
