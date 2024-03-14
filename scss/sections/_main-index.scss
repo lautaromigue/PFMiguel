@@ -1,6 +1,7 @@
-.div-tp{
+.div-tp {
     width: 100%;
     background-color: beige;
+
     .texto-principal {
         font-size: 30px;
         text-align: center;
@@ -21,10 +22,14 @@
 }
 
 .texto-secundario {
+    font-size: 20px;
     text-align: center;
     font-size: 30px;
+    margin: auto;
+    padding: 7px;
     color: rgb(239, 196, 148);
 }
+
 
 .seccion1 {
     .div {
@@ -33,10 +38,12 @@
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
+
         article {
             display: flex;
             flex-direction: column;
         }
+
         p {
             text-align: center;
             font-size: 20px;
@@ -61,14 +68,12 @@
 /* Estilos seccion1 */
 .seccion1 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "imagenes-gato-1"
-        "imagenes-gato-2"
-        "imagenes-perro-1"
-        "imagenes-perro-2"
-        "imagenes-tortuga-1"
-        "imagenes-tortuga-2";
+        "imagenes-gato-1 imagenes-gato-2"
+        "imagenes-perro-1 imagenes-perro-2"
+        "imagenes-tortuga-1 imagenes-tortuga-2";
 }
 
 .imagenes-perro-1 {
@@ -134,120 +139,87 @@
 }
 
 
-.cuidado {
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        article {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    p {
-        text-align: center;
-        font-size: 18px;
-        color: #443636;
-        margin: auto;
-        background-color: burlywood;
-        padding: 10px 50px 20px 50px
-    }
-}
-
-.cuidado-gato {
-    img {
-        display: flex;
-        margin: 10px;
-        height: 250px;
-        padding: 10px;
-        align-content: center;
-    }
-}
-
-.cuidado-perro {
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-.cuidado-tortuga {
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-
-.block {
-    width: 200px;
-    height: 100px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #000;
-
-    .text-space {
-        height: 50px;
-        width: 100%;
-    }
-}
-
-.links-paginas {
-    display: flex;
-    justify-content: space-evenly;
-
-    .button {
-        display: inline-block;
-        padding: $padding-botones;
-        border: none;
-        border-radius: $radio-borde-botones;
-        background-color: $color-botones;
-        color: white;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        a{
-            text-decoration: none;
-            color: green;
-            font-size: 30px;
-            margin: auto;
-            padding: 5px;
-        }
-
-        &:hover {
-            background-color: darken($color-botones, 10%);
-        }
-
-        &:focus {
-            outline: none;
-        }
-    }
-}
-
-h3 {
-    background-color: greenyellow;
-    text-align: center;
-    margin: auto;
-    padding: 5px;   
-}
-
-
-/* Estrategia Responsive = Mobile First */
-@media(min-width: 835px) {
+/* Estrategia Responsive = Mobile Last */
+@media(max-width: 835px) {
     .seccion1 {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "imagenes-gato-1 imagenes-gato-2"
-            "imagenes-perro-1 imagenes-perro-2"
-            "imagenes-tortuga-1 imagenes-tortuga-2";
+            "imagenes-gato-1"
+            "imagenes-gato-2"
+            "imagenes-perro-1"
+            "imagenes-perro-2"
+            "imagenes-tortuga-1"
+            "imagenes-tortuga-2";
+
     }
 }
 
+@media(max-width: 520px) {
+    .seccion1 {
+        .div {
+
+            .imagenes-gato-1 {
+                img {
+                    display: flex;
+                    margin: 10px;
+                    height: 150px;
+                    padding: 10px;
+                    align-content: center;
+                }
+            }
+
+
+            .imagenes-gato-2 {
+                img {
+                    display: flex;
+                    margin: 10px;
+                    height: 150px;
+                    padding: 10px;
+                    align-content: center;
+                }
+            }
+
+
+            .imagenes-perro-1 {
+                img {
+                    display: flex;
+                    margin: 10px;
+                    height: 150px;
+                    padding: 10px;
+                    align-content: center;
+                }
+            }
+
+            .imagenes-perro-2 {
+                img {
+                    display: flex;
+                    margin: 10px;
+                    height: 150px;
+                    padding: 10px;
+                    align-content: center;
+                }
+            }
+
+            .imagenes-tortuga-1 {
+                img {
+                    display: flex;
+                    margin: 10px;
+                    height: 150px;
+                    padding: 10px;
+                    align-content: center;
+                }
+            }
+
+            .imagenes-tortuga-2 {
+                img {
+                    display: flex;
+                    margin: 10px;
+                    height: 150px;
+                    padding: 10px;
+                    align-content: center;
+                }
+            }
+        }
+    }
+}

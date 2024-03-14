@@ -1,16 +1,25 @@
+.tp-gato{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: auto;
+    background-color: cadetblue;;
+}
+
 .seccion-gatos {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "imagenes-gato-1"
-        "imagenes-gato-2"
-        "imagenes-gato-3"
-        "imagenes-gato-4"
-        "imagenes-gato-5";
+        "imagenes-gato-1 imagenes-gato-2 imagenes-gato-3"
+        "imagenes-gato-1 imagenes-gato-4 imagenes-gato-5";
+
     div {
         display: flex;
         align-items: center;
     }
+
     p {
         text-align: center;
         font-size: 20px;
@@ -39,41 +48,46 @@
 }
 
 
-.imagenes-gato-3{
+.imagenes-gato-3 {
     img {
         @extend .css-imagenes;
     }
 }
 
-.imagenes-gato-4{
+.imagenes-gato-4 {
     img {
         @extend .css-imagenes;
     }
 }
 
-.imagenes-gato-5{
+.imagenes-gato-5 {
     img {
         @extend .css-imagenes;
     }
 }
 
-.cuidado{
-    img{
+.cuidado {
+    img {
         width: 500px;
         height: 300px;
     }
 }
 
 
-/* Estrategia Responsive = Mobile First */
+/* Estrategia Responsive = Mobile Last */
 
-@media(min-width: 1110px) {
+@media(max-width: 835px) {
     .seccion-gatos {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "imagenes-gato-1 imagenes-gato-2 imagenes-gato-3"
-            "imagenes-gato-1 imagenes-gato-4 imagenes-gato-5";
+            "imagenes-gato-1"
+            "imagenes-gato-2"
+            "imagenes-gato-3"
+            "imagenes-gato-4"
+            "imagenes-gato-5";
+        div{
+            flex-direction: column;
+        }
     }
 }

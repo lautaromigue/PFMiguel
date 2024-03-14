@@ -28,3 +28,14 @@
         }
     }
 }
+
+@media (max-width: 540px){
+    .navegacion{
+        img{
+            width: 80vw;
+        }
+        ul{
+            flex-wrap: wrap;
+        }
+    }
+}

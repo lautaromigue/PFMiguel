@@ -1,0 +1,100 @@
+.cuidado {
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .cuidado-animal {
+            h2{
+                margin: auto;
+                padding: 7px;
+                text-align: center;
+                font-size: 30px;
+                color: rgb(239, 196, 148);
+            }
+            img{
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                height: 250px;
+                padding: 10px;
+                align-content: center;
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #443636;
+            margin: auto;
+            background-color: burlywood;
+            padding: 10px 50px 20px 50px
+        }
+    }
+
+}
+
+.block {
+    width: 200px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+
+    .text-space {
+        height: 50px;
+        width: 100%;
+    }
+}
+
+.links-paginas {
+    display: flex;
+    justify-content: space-evenly;
+
+    .button {
+        display: inline-block;
+        padding: $padding-botones;
+        border: none;
+        border-radius: $radio-borde-botones;
+        background-color: $color-botones;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        a {
+            text-decoration: none;
+            color: green;
+            font-size: 30px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        &:hover {
+            background-color: darken($color-botones, 10%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+h3 {
+    background-color: greenyellow;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+
+@media (max-width: 540px){
+    .links-paginas{
+        display: flex;
+        flex-direction: column;
+    }
+}
