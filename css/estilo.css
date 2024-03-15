@@ -264,33 +264,12 @@ h3 {
   width: auto;
   background-color: cadetblue; }
 
-.seccion-gatos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "imagenes-gato-1 imagenes-gato-2 imagenes-gato-3" "imagenes-gato-1 imagenes-gato-4 imagenes-gato-5"; }
-  .seccion-gatos div {
-    display: flex;
-    align-items: center; }
-  .seccion-gatos p {
-    text-align: center;
-    font-size: 20px;
-    color: #a9a6a6; }
-
-.imagenes-gato-1 {
-  grid-area: imagenes-gato-1; }
-
-.imagenes-gato-2 {
-  grid-area: imagenes-gato-2; }
-
-.imagenes-gato-3 {
-  grid-area: imagenes-gato-3; }
-
-.imagenes-gato-4 {
-  grid-area: imagenes-gato-4; }
-
-.imagenes-gato-5 {
-  grid-area: imagenes-gato-5; }
+.seccion-gatos .div-gatos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 /* Estrategia Responsive = Mobile Last */
 @media (max-width: 835px) {
