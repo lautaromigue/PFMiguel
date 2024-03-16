@@ -8,53 +8,121 @@
     ;
 }
 
+.grilla-gatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "div-gato-1 div-gato-2 div-gato-3"
+        "div-gato-4 div-gato-5 div-gato-6";
+}
+
+.div-gato-1 {
+    grid-area: div-gato-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-gato-2 {
+    grid-area: div-gato-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-gato-3 {
+    grid-area: div-gato-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-gato-4 {
+    grid-area: div-gato-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-gato-5 {
+    grid-area: div-gato-5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-gato-6 {
+    grid-area: div-gato-6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .seccion-gatos {
-    .div-gatos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+    .grilla-gatos {
+        img {
+            @extend .css-imagenes;
+        }
 
-}
-
-
-.imagenes-gato-3 {
-    img {
-        @extend .css-imagenes;
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: #a9a6a6;
+            margin: auto;
+            padding: 10px 50px 20px 50px;
+        }
     }
 }
 
-.imagenes-gato-4 {
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-.imagenes-gato-5 {
-    img {
-        @extend .css-imagenes;
-    }
-}
 
 
 
 /* Estrategia Responsive = Mobile Last */
 
-@media(max-width: 835px) {
-    .seccion-gatos {
+@media(max-width: 890px) {
+    .grilla-gatos {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-            "imagenes-gato-1"
-            "imagenes-gato-2"
-            "imagenes-gato-3"
-            "imagenes-gato-4"
-            "imagenes-gato-5";
+            "div-gato-1 div-gato-2"
+            "div-gato-3 div-gato-4"
+            "div-gato-5 div-gato-6";
+    }
+}
 
-        div {
-            flex-direction: column;
+@media(max-width: 620px){
+    .grilla-gatos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "div-gato-1" 
+            "div-gato-2"
+            "div-gato-3" 
+            "div-gato-4"
+            "div-gato-5" 
+            "div-gato-6";
+            img {
+                display: flex;
+                margin: 10px;
+                height: 150px;
+                padding: 10px;
+                align-content: center;
+            }
+    }
+    .cuidado{
+        img {
+            display: flex;
+            margin: 10px;
+            height: 70vw;
+            padding: 10px;
+            align-content: center;
         }
     }
 }
