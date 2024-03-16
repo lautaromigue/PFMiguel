@@ -110,6 +110,38 @@
 }
 
 
+.footer {
+    background-color: #333;
+    color: #b27f7f;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icon {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #dfd07c; /* Cambiar a color amarillo al pasar el mouse */
+  }
+
+
+
+
+
+
+
+
+
 /* Estrategia Responsive = Mobile Last */
 @media(max-width: 835px) {
     .seccion1 {

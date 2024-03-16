@@ -1,9 +1,43 @@
-.gifs{
+.tp-cuenta {
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: auto;
+    background-color: cadetblue;
+}
+
+.gifs {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-main{
-    min-height: 81.5vh;
+main {
+    .info {
+        padding: 30px;
+        margin: 30px;
+    }
+
+    .form-control {
+        width: 50%;
+    }
 }
+
+@media(max-width: 530px){
+    .gifs{
+        img{
+            height: 200px;
+        }
+    }
+}
+
+@media(max-width: 530px){
+    .gifs{
+        img{
+            height: 150px;
+        }
+    }
+}
+

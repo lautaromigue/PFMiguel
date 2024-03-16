@@ -118,6 +118,27 @@
 .imagen-6 {
   grid-area: imagen-6; }
 
+.footer {
+  background-color: #333;
+  color: #b27f7f;
+  text-align: center;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%; }
+
+.social-icons {
+  margin-bottom: 10px; }
+
+.social-icon {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s; }
+
+.social-icon:hover {
+  color: #dfd07c;
+  /* Cambiar a color amarillo al pasar el mouse */ }
+
 /* Estrategia Responsive = Mobile Last */
 @media (max-width: 835px) {
   .seccion1 {
@@ -182,7 +203,7 @@
       display: flex;
       flex-direction: column;
       margin: 10px;
-      height: 40vw;
+      height: 25vw;
       padding: 10px;
       align-content: center; }
   .cuidado div p {
@@ -437,7 +458,7 @@ h3 {
   .grilla-perros {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "div-perro-1"  "div-perro-2" "div-perro-3"  "div-perro-4" "div-perro-5"  "div-perro-6"; }
+    grid-template-areas: "div-perro-1" "div-perro-2" "div-perro-3" "div-perro-4" "div-perro-5" "div-perro-6"; }
     .grilla-perros img {
       display: flex;
       margin: 10px;
@@ -556,10 +577,31 @@ h3 {
   .grilla-tortugas img {
     height: 20vw; } }
 
+.tp-cuenta {
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  width: auto;
+  background-color: cadetblue; }
+
 .gifs {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
 
-main {
-  min-height: 81.5vh; }
+main .info {
+  padding: 30px;
+  margin: 30px; }
+
+main .form-control {
+  width: 50%; }
+
+@media (max-width: 530px) {
+  .gifs img {
+    height: 200px; } }
+
+@media (max-width: 530px) {
+  .gifs img {
+    height: 150px; } }

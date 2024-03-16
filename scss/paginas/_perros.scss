@@ -5,7 +5,7 @@
     padding: 5px;
     width: auto;
     background-color: cadetblue;
-    
+
 }
 
 .grilla-perros {
@@ -87,13 +87,14 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        p{
+
+        p {
             text-align: center;
             font-size: 18px;
             color: #443636;
             margin: auto;
             background-color: burlywood;
-            padding: 10px 50px 20px 50px; 
+            padding: 10px 50px 20px 50px;
         }
     }
 }
@@ -114,26 +115,28 @@
     }
 }
 
-@media(max-width: 960px){
-    .grilla-perros{
+@media(max-width: 960px) {
+    .grilla-perros {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-            "div-perro-1" 
+            "div-perro-1"
             "div-perro-2"
-            "div-perro-3" 
+            "div-perro-3"
             "div-perro-4"
-            "div-perro-5" 
+            "div-perro-5"
             "div-perro-6";
-            img {
-                display: flex;
-                margin: 10px;
-                height: 150px;
-                padding: 10px;
-                align-content: center;
-            }
+
+        img {
+            display: flex;
+            margin: 10px;
+            height: 150px;
+            padding: 10px;
+            align-content: center;
+        }
     }
-    .cuidado-perros{
+
+    .cuidado-perros {
         img {
             display: flex;
             margin: 10px;
