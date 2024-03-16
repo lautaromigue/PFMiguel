@@ -71,70 +71,41 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-        "imagenes-gato-1 imagenes-gato-2"
-        "imagenes-perro-1 imagenes-perro-2"
-        "imagenes-tortuga-1 imagenes-tortuga-2";
+        "imagen-1 imagen-2"
+        "imagen-3 imagen-4"
+        "imagen-5 imagen-6";
 }
 
-.imagenes-perro-1 {
-    grid-area: imagenes-perro-1;
+.imagen-1 {
+    grid-area: imagen-1;
 }
 
-.imagenes-perro-2 {
-    grid-area: imagenes-perro-2;
+.imagen-2 {
+    grid-area: imagen-2;
 }
 
-.imagenes-gato-1 {
-    grid-area: imagenes-gato-1;
+.imagen-3 {
+    grid-area: imagen-3;
 }
 
-.imagenes-gato-2 {
-    grid-area: imagenes-gato-2;
+.imagen-4 {
+    grid-area: imagen-4;
 }
 
-.imagenes-tortuga-1 {
-    grid-area: imagenes-tortuga-1;
+.imagen-5 {
+    grid-area: imagen-5;
 }
 
-.imagenes-tortuga-2 {
-    grid-area: imagenes-tortuga-2;
+.imagen-6 {
+    grid-area: imagen-6;
 }
 
-.imagenes-gato-1 {
-    img {
-        @extend .css-imagenes;
-    }
-}
+.seccion1 {
+    .div {
 
-
-.imagenes-gato-2 {
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-
-.imagenes-perro-1 {
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-.imagenes-perro-2 {
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-.imagenes-tortuga-1 {
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-.imagenes-tortuga-2 {
-    img {
-        @extend .css-imagenes;
+        img {
+            @extend .css-imagenes;
+        }
     }
 }
 
@@ -159,7 +130,7 @@
     .seccion1 {
         .div {
 
-            .imagenes-gato-1 {
+            .imagen-1 {
                 img {
                     display: flex;
                     margin: 10px;
@@ -170,7 +141,7 @@
             }
 
 
-            .imagenes-gato-2 {
+            .imagen-2 {
                 img {
                     display: flex;
                     margin: 10px;
@@ -181,7 +152,7 @@
             }
 
 
-            .imagenes-perro-1 {
+            .imagen-3 {
                 img {
                     display: flex;
                     margin: 10px;
@@ -191,7 +162,7 @@
                 }
             }
 
-            .imagenes-perro-2 {
+            .imagen-4 {
                 img {
                     display: flex;
                     margin: 10px;
@@ -201,7 +172,7 @@
                 }
             }
 
-            .imagenes-tortuga-1 {
+            .imagen-5 {
                 img {
                     display: flex;
                     margin: 10px;
@@ -211,7 +182,7 @@
                 }
             }
 
-            .imagenes-tortuga-2 {
+            .imagen-6 {
                 img {
                     display: flex;
                     margin: 10px;

@@ -5,7 +5,6 @@
     padding: 5px;
     width: auto;
     background-color: cadetblue;
-    ;
 }
 
 .grilla-gatos {
@@ -81,6 +80,23 @@
     }
 }
 
+.cuidado-gatos {
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            text-align: center;
+            font-size: 18px;
+            color: #443636;
+            margin: auto;
+            background-color: burlywood;
+            padding: 10px 50px 20px 50px; 
+        }
+    }
+}
+
 
 
 
@@ -97,30 +113,32 @@
     }
 }
 
-@media(max-width: 620px){
-    .grilla-gatos{
+@media(max-width: 620px) {
+    .grilla-gatos {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-            "div-gato-1" 
+            "div-gato-1"
             "div-gato-2"
-            "div-gato-3" 
+            "div-gato-3"
             "div-gato-4"
-            "div-gato-5" 
+            "div-gato-5"
             "div-gato-6";
-            img {
-                display: flex;
-                margin: 10px;
-                height: 150px;
-                padding: 10px;
-                align-content: center;
-            }
-    }
-    .cuidado{
+
         img {
             display: flex;
             margin: 10px;
-            height: 70vw;
+            height: 30vw;
+            padding: 10px;
+            align-content: center;
+        }
+    }
+
+    .cuidado-gatos {
+        img {
+            display: flex;
+            margin: 10px;
+            height: 60vw;
             padding: 10px;
             align-content: center;
         }

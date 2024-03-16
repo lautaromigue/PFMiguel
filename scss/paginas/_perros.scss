@@ -1,77 +1,145 @@
+.tp-perro {
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: auto;
+    background-color: cadetblue;
+    
+}
+
+.grilla-perros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "div-perro-1 div-perro-2 div-perro-3"
+        "div-perro-4 div-perro-5 div-perro-6";
+}
+
+.div-perro-1 {
+    grid-area: div-perro-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-perro-2 {
+    grid-area: div-perro-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-perro-3 {
+    grid-area: div-perro-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-perro-4 {
+    grid-area: div-perro-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-perro-5 {
+    grid-area: div-perro-5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-perro-6 {
+    grid-area: div-perro-6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .seccion-perros {
+    .grilla-perros {
+        img {
+            @extend .css-imagenes;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: #a9a6a6;
+            margin: auto;
+            padding: 10px 50px 20px 50px;
+        }
+    }
+}
+
+.cuidado-perros {
     div {
         display: flex;
         align-items: center;
-    }
-    p {
-        text-align: center;
-        font-size: 20px;
-        color: rgb(169, 166, 166);
-    }
-}
-
-
-.seccion-perros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "imagenes-perro-1"
-        "imagenes-perro-2"
-        "imagenes-perro-3"
-        "imagenes-perro-4"
-        "imagenes-perro-5";
-}
-
-.imagenes-perro-1 {
-    grid-area: imagenes-perro-1;
-}
-
-.imagenes-perro-2 {
-    grid-area: imagenes-perro-2;
-}
-
-.imagenes-perro-3 {
-    grid-area: imagenes-perro-3;
-}
-
-.imagenes-perro-4 {
-    grid-area: imagenes-perro-4;
-}
-
-.imagenes-perro-5 {
-    grid-area: imagenes-perro-5;
-}
-
-.imagenes-perro-3{
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-.imagenes-perro-4{
-    img {
-        @extend .css-imagenes;
-    }
-}
-
-.imagenes-perro-5{
-    img {
-        @extend .css-imagenes;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            text-align: center;
+            font-size: 18px;
+            color: #443636;
+            margin: auto;
+            background-color: burlywood;
+            padding: 10px 50px 20px 50px; 
+        }
     }
 }
 
 
 
 
-/* Estrategia Responsive = Mobile First */
+/* Estrategia Responsive = Mobile Last */
 
-@media(min-width: 1110px) {
-    .seccion-perros {
+@media(max-width: 1330px) {
+    .grilla-perros {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "imagenes-perro-1 imagenes-perro-2 imagenes-perro-3"
-            "imagenes-perro-1 imagenes-perro-4 imagenes-perro-5";
+            "div-perro-1 div-perro-2"
+            "div-perro-3 div-perro-4"
+            "div-perro-5 div-perro-6";
+    }
+}
+
+@media(max-width: 960px){
+    .grilla-perros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "div-perro-1" 
+            "div-perro-2"
+            "div-perro-3" 
+            "div-perro-4"
+            "div-perro-5" 
+            "div-perro-6";
+            img {
+                display: flex;
+                margin: 10px;
+                height: 150px;
+                padding: 10px;
+                align-content: center;
+            }
+    }
+    .cuidado-perros{
+        img {
+            display: flex;
+            margin: 10px;
+            height: 70vw;
+            padding: 10px;
+            align-content: center;
+        }
     }
 }

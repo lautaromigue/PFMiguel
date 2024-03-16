@@ -1,72 +1,157 @@
+.tp-tortuga {
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: auto;
+    background-color: cadetblue;
 
-.seccion-tortugas{
-    div{
+}
+
+.grilla-tortugas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "div-tortuga-1 div-tortuga-2 div-tortuga-3"
+        "div-tortuga-4 div-tortuga-5 div-tortuga-6";
+}
+
+.div-tortuga-1 {
+    grid-area: div-tortuga-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-tortuga-2 {
+    grid-area: div-tortuga-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-tortuga-3 {
+    grid-area: div-tortuga-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-tortuga-4 {
+    grid-area: div-tortuga-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-tortuga-5 {
+    grid-area: div-tortuga-5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-tortuga-6 {
+    grid-area: div-tortuga-6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seccion-tortugas {
+    .grilla-tortugas {
+        img {
+            @extend .css-imagenes;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: #a9a6a6;
+            margin: auto;
+            padding: 10px 50px 20px 50px;
+        }
+    }
+}
+
+.cuidado-tortugas {
+    div {
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #443636;
+            margin: auto;
+            background-color: burlywood;
+            padding: 10px 50px 20px 50px;
+        }
     }
-    p {
-        text-align: center;
-        font-size: 20px;
-        color: rgb(169, 166, 166);
-    }
 }
 
 
-.seccion-tortugas {  
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "imagenes-tortuga-1"
-    "imagenes-tortuga-2"
-    "imagenes-tortuga-3"
-    "imagenes-tortuga-4"
-    "imagenes-tortuga-5";
-  }
-  
-  .imagenes-tortuga-1 { grid-area: imagenes-tortuga-1; }
-  
-  .imagenes-tortuga-2 { grid-area: imagenes-tortuga-2; }
-  
-  .imagenes-tortuga-3 { grid-area: imagenes-tortuga-3; }
-  
-  .imagenes-tortuga-4 { grid-area: imagenes-tortuga-4; }
-  
-  .imagenes-tortuga-5 { grid-area: imagenes-tortuga-5; }
-
-.imagenes-tortuga-3 img {
-    display: flex;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    padding: 10px;
-}
-
-.imagenes-tortuga-4 img {
-    display: flex;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    padding: 10px;
-}
-
-.imagenes-tortuga-5 img {
-    display: flex;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    padding: 10px;
-}
 
 
-/* Estrategia Responsive = Mobile First */
+/* Estrategia Responsive = Mobile Last */
 
-@media(min-width: 1110px){
-    .seccion-tortugas{
+@media(max-width: 1370px) {
+    .grilla-tortugas {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "imagenes-tortuga-1 imagenes-tortuga-2 imagenes-tortuga-3"
-        "imagenes-tortuga-1 imagenes-tortuga-4 imagenes-tortuga-5";
+            "div-tortuga-1 div-tortuga-2"
+            "div-tortuga-3 div-tortuga-4"
+            "div-tortuga-5 div-tortuga-6";
+    }
+}
+
+@media(max-width: 1200px) {
+    .grilla-tortugas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "div-tortuga-1"
+            "div-tortuga-2"
+            "div-tortuga-3"
+            "div-tortuga-4"
+            "div-tortuga-5"
+            "div-tortuga-6";
+
+        img {
+            display: flex;
+            margin: 10px;
+            height: 150px;
+            padding: 10px;
+            align-content: center;
+        }
+    }
+
+    .cuidado-tortugas {
+        img {
+            display: flex;
+            margin: 10px;
+            height: 40vw;
+            padding: 10px;
+            align-content: center;
+        }
+    }
+}
+
+@media(max-width: 530px) {
+    .grilla-tortugas {
+        img {
+            height: 20vw;
+
+        }
     }
 }

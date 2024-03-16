@@ -3,17 +3,10 @@
   padding: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-.css-imagenes, .imagenes-gato-1 img, .imagenes-gato-2 img, .imagenes-perro-1 img, .imagenes-perro-2 img, .imagenes-tortuga-1 img, .imagenes-tortuga-2 img, .seccion-gatos .grilla-gatos img, .imagenes-perro-3 img, .imagenes-perro-4 img, .imagenes-perro-5 img {
+.css-imagenes, .seccion1 .div img, .seccion-gatos .grilla-gatos img, .seccion-perros .grilla-perros img, .seccion-tortugas .grilla-tortugas img {
   display: flex;
   margin: 10px;
-  height: 250px;
-  padding: 10px;
-  align-content: center; }
-
-.css-imagenes-responsive {
-  display: flex;
-  margin: 10px;
-  height: 150px;
+  height: 180px;
   padding: 10px;
   align-content: center; }
 
@@ -105,25 +98,25 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "imagenes-gato-1 imagenes-gato-2" "imagenes-perro-1 imagenes-perro-2" "imagenes-tortuga-1 imagenes-tortuga-2"; }
+  grid-template-areas: "imagen-1 imagen-2" "imagen-3 imagen-4" "imagen-5 imagen-6"; }
 
-.imagenes-perro-1 {
-  grid-area: imagenes-perro-1; }
+.imagen-1 {
+  grid-area: imagen-1; }
 
-.imagenes-perro-2 {
-  grid-area: imagenes-perro-2; }
+.imagen-2 {
+  grid-area: imagen-2; }
 
-.imagenes-gato-1 {
-  grid-area: imagenes-gato-1; }
+.imagen-3 {
+  grid-area: imagen-3; }
 
-.imagenes-gato-2 {
-  grid-area: imagenes-gato-2; }
+.imagen-4 {
+  grid-area: imagen-4; }
 
-.imagenes-tortuga-1 {
-  grid-area: imagenes-tortuga-1; }
+.imagen-5 {
+  grid-area: imagen-5; }
 
-.imagenes-tortuga-2 {
-  grid-area: imagenes-tortuga-2; }
+.imagen-6 {
+  grid-area: imagen-6; }
 
 /* Estrategia Responsive = Mobile Last */
 @media (max-width: 835px) {
@@ -133,37 +126,37 @@
     grid-template-areas: "imagenes-gato-1" "imagenes-gato-2" "imagenes-perro-1" "imagenes-perro-2" "imagenes-tortuga-1" "imagenes-tortuga-2"; } }
 
 @media (max-width: 520px) {
-  .seccion1 .div .imagenes-gato-1 img {
+  .seccion1 .div .imagen-1 img {
     display: flex;
     margin: 10px;
     height: 150px;
     padding: 10px;
     align-content: center; }
-  .seccion1 .div .imagenes-gato-2 img {
+  .seccion1 .div .imagen-2 img {
     display: flex;
     margin: 10px;
     height: 150px;
     padding: 10px;
     align-content: center; }
-  .seccion1 .div .imagenes-perro-1 img {
+  .seccion1 .div .imagen-3 img {
     display: flex;
     margin: 10px;
     height: 150px;
     padding: 10px;
     align-content: center; }
-  .seccion1 .div .imagenes-perro-2 img {
+  .seccion1 .div .imagen-4 img {
     display: flex;
     margin: 10px;
     height: 150px;
     padding: 10px;
     align-content: center; }
-  .seccion1 .div .imagenes-tortuga-1 img {
+  .seccion1 .div .imagen-5 img {
     display: flex;
     margin: 10px;
     height: 150px;
     padding: 10px;
     align-content: center; }
-  .seccion1 .div .imagenes-tortuga-2 img {
+  .seccion1 .div .imagen-6 img {
     display: flex;
     margin: 10px;
     height: 150px;
@@ -175,21 +168,21 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  .cuidado div .cuidado-animal {
+  .cuidado div .cuidado-animal-index {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .cuidado div .cuidado-animal h2 {
+    .cuidado div .cuidado-animal-index h2 {
       margin: auto;
       padding: 7px;
       text-align: center;
       font-size: 30px;
       color: #efc494; }
-    .cuidado div .cuidado-animal img {
+    .cuidado div .cuidado-animal-index img {
       display: flex;
       flex-direction: column;
       margin: 10px;
-      height: 250px;
+      height: 40vw;
       padding: 10px;
       align-content: center; }
   .cuidado div p {
@@ -319,6 +312,19 @@ h3 {
   margin: auto;
   padding: 10px 50px 20px 50px; }
 
+.cuidado-gatos div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .cuidado-gatos div p {
+    text-align: center;
+    font-size: 18px;
+    color: #443636;
+    margin: auto;
+    background-color: burlywood;
+    padding: 10px 50px 20px 50px; }
+
 /* Estrategia Responsive = Mobile Last */
 @media (max-width: 890px) {
   .grilla-gatos {
@@ -330,114 +336,225 @@ h3 {
   .grilla-gatos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "div-gato-1"  "div-gato-2" "div-gato-3"  "div-gato-4" "div-gato-5"  "div-gato-6"; }
+    grid-template-areas: "div-gato-1" "div-gato-2" "div-gato-3" "div-gato-4" "div-gato-5" "div-gato-6"; }
     .grilla-gatos img {
+      display: flex;
+      margin: 10px;
+      height: 30vw;
+      padding: 10px;
+      align-content: center; }
+  .cuidado-gatos img {
+    display: flex;
+    margin: 10px;
+    height: 60vw;
+    padding: 10px;
+    align-content: center; } }
+
+.tp-perro {
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  width: auto;
+  background-color: cadetblue; }
+
+.grilla-perros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "div-perro-1 div-perro-2 div-perro-3" "div-perro-4 div-perro-5 div-perro-6"; }
+
+.div-perro-1 {
+  grid-area: div-perro-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-perro-2 {
+  grid-area: div-perro-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-perro-3 {
+  grid-area: div-perro-3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-perro-4 {
+  grid-area: div-perro-4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-perro-5 {
+  grid-area: div-perro-5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-perro-6 {
+  grid-area: div-perro-6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.seccion-perros .grilla-perros p {
+  text-align: center;
+  font-size: 20px;
+  color: #a9a6a6;
+  margin: auto;
+  padding: 10px 50px 20px 50px; }
+
+.cuidado-perros div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .cuidado-perros div p {
+    text-align: center;
+    font-size: 18px;
+    color: #443636;
+    margin: auto;
+    background-color: burlywood;
+    padding: 10px 50px 20px 50px; }
+
+/* Estrategia Responsive = Mobile Last */
+@media (max-width: 1330px) {
+  .grilla-perros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "div-perro-1 div-perro-2" "div-perro-3 div-perro-4" "div-perro-5 div-perro-6"; } }
+
+@media (max-width: 960px) {
+  .grilla-perros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "div-perro-1"  "div-perro-2" "div-perro-3"  "div-perro-4" "div-perro-5"  "div-perro-6"; }
+    .grilla-perros img {
       display: flex;
       margin: 10px;
       height: 150px;
       padding: 10px;
       align-content: center; }
-  .cuidado img {
+  .cuidado-perros img {
     display: flex;
     margin: 10px;
     height: 70vw;
     padding: 10px;
     align-content: center; } }
 
-.seccion-perros div {
-  display: flex;
-  align-items: center; }
+.tp-tortuga {
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  width: auto;
+  background-color: cadetblue; }
 
-.seccion-perros p {
+.grilla-tortugas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "div-tortuga-1 div-tortuga-2 div-tortuga-3" "div-tortuga-4 div-tortuga-5 div-tortuga-6"; }
+
+.div-tortuga-1 {
+  grid-area: div-tortuga-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-tortuga-2 {
+  grid-area: div-tortuga-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-tortuga-3 {
+  grid-area: div-tortuga-3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-tortuga-4 {
+  grid-area: div-tortuga-4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-tortuga-5 {
+  grid-area: div-tortuga-5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.div-tortuga-6 {
+  grid-area: div-tortuga-6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.seccion-tortugas .grilla-tortugas p {
   text-align: center;
   font-size: 20px;
-  color: #a9a6a6; }
+  color: #a9a6a6;
+  margin: auto;
+  padding: 10px 50px 20px 50px; }
 
-.seccion-perros {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "imagenes-perro-1" "imagenes-perro-2" "imagenes-perro-3" "imagenes-perro-4" "imagenes-perro-5"; }
+.cuidado-tortugas div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .cuidado-tortugas div p {
+    text-align: center;
+    font-size: 18px;
+    color: #443636;
+    margin: auto;
+    background-color: burlywood;
+    padding: 10px 50px 20px 50px; }
 
-.imagenes-perro-1 {
-  grid-area: imagenes-perro-1; }
-
-.imagenes-perro-2 {
-  grid-area: imagenes-perro-2; }
-
-.imagenes-perro-3 {
-  grid-area: imagenes-perro-3; }
-
-.imagenes-perro-4 {
-  grid-area: imagenes-perro-4; }
-
-.imagenes-perro-5 {
-  grid-area: imagenes-perro-5; }
-
-/* Estrategia Responsive = Mobile First */
-@media (min-width: 1110px) {
-  .seccion-perros {
+/* Estrategia Responsive = Mobile Last */
+@media (max-width: 1370px) {
+  .grilla-tortugas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imagenes-perro-1 imagenes-perro-2 imagenes-perro-3" "imagenes-perro-1 imagenes-perro-4 imagenes-perro-5"; } }
+    grid-template-columns: 1fr;
+    grid-template-areas: "div-tortuga-1 div-tortuga-2" "div-tortuga-3 div-tortuga-4" "div-tortuga-5 div-tortuga-6"; } }
 
-.seccion-tortugas div {
-  display: flex;
-  align-items: center; }
-
-.seccion-tortugas p {
-  text-align: center;
-  font-size: 20px;
-  color: #a9a6a6; }
-
-.seccion-tortugas {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "imagenes-tortuga-1" "imagenes-tortuga-2" "imagenes-tortuga-3" "imagenes-tortuga-4" "imagenes-tortuga-5"; }
-
-.imagenes-tortuga-1 {
-  grid-area: imagenes-tortuga-1; }
-
-.imagenes-tortuga-2 {
-  grid-area: imagenes-tortuga-2; }
-
-.imagenes-tortuga-3 {
-  grid-area: imagenes-tortuga-3; }
-
-.imagenes-tortuga-4 {
-  grid-area: imagenes-tortuga-4; }
-
-.imagenes-tortuga-5 {
-  grid-area: imagenes-tortuga-5; }
-
-.imagenes-tortuga-3 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-tortuga-4 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-tortuga-5 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-/* Estrategia Responsive = Mobile First */
-@media (min-width: 1110px) {
-  .seccion-tortugas {
+@media (max-width: 1200px) {
+  .grilla-tortugas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "imagenes-tortuga-1 imagenes-tortuga-2 imagenes-tortuga-3" "imagenes-tortuga-1 imagenes-tortuga-4 imagenes-tortuga-5"; } }
+    grid-template-columns: 1fr;
+    grid-template-areas: "div-tortuga-1" "div-tortuga-2" "div-tortuga-3" "div-tortuga-4" "div-tortuga-5" "div-tortuga-6"; }
+    .grilla-tortugas img {
+      display: flex;
+      margin: 10px;
+      height: 150px;
+      padding: 10px;
+      align-content: center; }
+  .cuidado-tortugas img {
+    display: flex;
+    margin: 10px;
+    height: 40vw;
+    padding: 10px;
+    align-content: center; } }
+
+@media (max-width: 530px) {
+  .grilla-tortugas img {
+    height: 20vw; } }
 
 .gifs {
   display: flex;
