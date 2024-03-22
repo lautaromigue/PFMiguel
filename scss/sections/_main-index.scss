@@ -131,7 +131,7 @@
   }
   
   .social-icon:hover {
-    color: #dfd07c; /* Cambiar a color amarillo al pasar el mouse */
+    color: #dfd07c;
   }
 
 
@@ -164,63 +164,39 @@
 
             .imagen-1 {
                 img {
-                    display: flex;
-                    margin: 10px;
-                    height: 150px;
-                    padding: 10px;
-                    align-content: center;
+                    @extend .css-imagenes-main;
                 }
             }
 
 
             .imagen-2 {
                 img {
-                    display: flex;
-                    margin: 10px;
-                    height: 150px;
-                    padding: 10px;
-                    align-content: center;
+                    @extend .css-imagenes-main;
                 }
             }
 
 
             .imagen-3 {
                 img {
-                    display: flex;
-                    margin: 10px;
-                    height: 150px;
-                    padding: 10px;
-                    align-content: center;
+                    @extend .css-imagenes-main;
                 }
             }
 
             .imagen-4 {
                 img {
-                    display: flex;
-                    margin: 10px;
-                    height: 150px;
-                    padding: 10px;
-                    align-content: center;
+                    @extend .css-imagenes-main;
                 }
             }
 
             .imagen-5 {
                 img {
-                    display: flex;
-                    margin: 10px;
-                    height: 150px;
-                    padding: 10px;
-                    align-content: center;
+                    @extend .css-imagenes-main;
                 }
             }
 
             .imagen-6 {
                 img {
-                    display: flex;
-                    margin: 10px;
-                    height: 150px;
-                    padding: 10px;
-                    align-content: center;
+                    @extend .css-imagenes-main;
                 }
             }
         }
